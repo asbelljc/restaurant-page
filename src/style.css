@@ -199,7 +199,7 @@ nav {
 
 h1 {
   color: rgb(55, 210, 215);
-  font-size: 5.6vw;
+  font-size: clamp(28px, 5.6vw, 42px); /* elimnates media queries for font-size! */
   margin: 0 0 6px 0;
   font-weight: 400;
   text-align: center;
@@ -239,12 +239,6 @@ span {
   display: block;
 }
 
-@media (max-width: 500px) {
-  h1 {
-    font-size: 28px; /* lower bound for h1 font-size */
-  }
-}
-
 /* use custom scrollbar except in phone territory */
 @media (min-width: 500px) {
   #scroll-box::-webkit-scrollbar {
@@ -271,11 +265,11 @@ span {
 }
 
 @media (min-width: 750px) {
-  h1 {
-    font-size: 42px;
-  }
-
   #home-content {
     flex-direction: row;
+  }
+
+  .image-wrap {
+    margin: 24px;
   }
 }
