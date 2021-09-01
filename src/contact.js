@@ -4,6 +4,7 @@ function makeContact() {
 
   phone = document.createElement('div');
   phone.id = 'phone';
+  phone.innerText = '000-555-1234';
 
   form = document.createElement('form');
 
@@ -16,10 +17,12 @@ function makeContact() {
   clientEmail.placeholder = 'E-mail address';
 
   message = document.createElement('textarea');
+  message.placeholder = "Leave us a message and we'll reply promptly!";
 
   sendBtn = document.createElement('button');
   sendBtn.type = 'button';
   sendBtn.id = 'send-btn';
+  sendBtn.innerText = 'SEND';
 
   form.appendChild(clientName);
   form.appendChild(clientEmail);
