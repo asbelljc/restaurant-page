@@ -1,11 +1,11 @@
 import slices from './slices.jpeg';
 
 function makeHome() {
-  const homeContent = document.createElement('div');
-  homeContent.id = 'home-content';
+  const content = document.createElement('div');
+  content.id = 'home-content';
 
-  const homeCopy = document.createElement('section');
-  homeCopy.id = 'home-copy';
+  const copy = document.createElement('section');
+  copy.id = 'home-copy';
 
   const heading = document.createElement('h1');
   heading.innerText = 'piece of cake';
@@ -25,13 +25,13 @@ function makeHome() {
   slicesPic.src = slices;
   slicesPic.id = 'slices';
 
-  homeCopy.appendChild(heading);
-  homeCopy.appendChild(body);
+  copy.appendChild(heading);
+  copy.appendChild(body);
   imageWrap.appendChild(slicesPic);
-  homeContent.appendChild(homeCopy);
-  homeContent.appendChild(imageWrap);
+  content.appendChild(homeCopy);
+  content.appendChild(imageWrap);
 
-  return homeContent;
+  return content;
 }
 
 function loadHome() {
