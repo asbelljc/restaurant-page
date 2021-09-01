@@ -30,8 +30,8 @@ function makeNav() {
   const slider = document.createElement('div');
   slider.className = 'slider home';
 
-  const sliderLeft = document.createElement('svg');
-  sliderLeft.className = 'inner-corner';
+  const sliderLeft = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  sliderLeft.setAttribute('class', 'inner-corner');
   sliderLeft.setAttribute('version', '1.1');
   sliderLeft.setAttribute('xmlns:x', '&ns_extend;');
   sliderLeft.setAttribute('xmlns:i', '&ns_ai;');
@@ -44,14 +44,14 @@ function makeNav() {
   sliderLeft.setAttribute('style', 'enable-background:new 0 0 500 500;');
   sliderLeft.setAttribute('xml:space', 'preserve');
 
-  const sliderLeftPath = document.createElement('path');
+  const sliderLeftPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
   sliderLeftPath.setAttribute('d', 'M500,0c0,276.14-223.86,500-500,500h500C500,500,500,0,500,0z');
 
   const sliderCore = document.createElement('div');
   sliderCore.className = "core";
 
-  const sliderRight = document.createElement('svg');
-  sliderRight.className = 'inner-corner';
+  const sliderRight = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  sliderRight.setAttribute('class', 'inner-corner');
   sliderRight.setAttribute('version', '1.1');
   sliderRight.setAttribute('xmlns:x', '&ns_extend;');
   sliderRight.setAttribute('xmlns:i', '&ns_ai;');
@@ -64,7 +64,7 @@ function makeNav() {
   sliderRight.setAttribute('style', 'enable-background:new 0 0 500 500;');
   sliderRight.setAttribute('xml:space', 'preserve');
 
-  const sliderRightPath = document.createElement('path');
+  const sliderRightPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
   sliderRightPath.setAttribute('d', 'M0,0c0,276.14,223.86,500,500,500H0C0,500,0,0,0,0z');
 
   sliderLeft.appendChild(sliderLeftPath);
