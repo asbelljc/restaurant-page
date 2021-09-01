@@ -1,9 +1,11 @@
+import brand from './brand.svg';
+
 function makeHeader() {
   const header = document.createElement('header');
   header.id = 'header';
 
   const businessName = document.createElement('img');
-  businessName.src = './brand.svg';
+  businessName.src = brand;
 
   header.appendChild(businessName);
 
