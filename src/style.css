@@ -355,6 +355,10 @@ a {
     border-radius: 9px;
     background-clip: content-box;
   }
+
+  #scroll-box {
+    scrollbar-color: rgba(255, 250, 245, 0.5) transparent;
+  }
 }
 
 @media (min-width: 750px) {
