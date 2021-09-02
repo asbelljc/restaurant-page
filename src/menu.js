@@ -24,14 +24,14 @@ function makeItem(name, image) {
 
   imageWrap.appendChild(pic);
   item.appendChild(itemName);
-  item.apprendChild(imageWrap);
+  item.appendChild(imageWrap);
 
   return item;
 }
 
 function makeMenu() {
   const content = document.createElement('div');
-  content.className = 'menu-content';
+  content.id = 'menu-content';
 
   content.appendChild(makeItem('classic', classic));
   content.appendChild(makeItem('chocolate', chocolate));
