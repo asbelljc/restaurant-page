@@ -95,7 +95,9 @@ nav {
   padding: 7px 0 3px 0;
   border: none;
   background: none;
-  transition: color 0.5s;
+  transition: 
+    color 0.5s,
+    transform 0.15s;
 }
 
 .active {
@@ -293,6 +295,10 @@ input[type=text]:focus {
 @media (hover: hover) and (pointer: fine) {
   button:hover {
     cursor: pointer;
+  }
+
+  .nav-btn:not(.active):hover {
+    transform: translateY(-3px);
   }
 
   #send-btn:hover {
