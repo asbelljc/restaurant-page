@@ -1,4 +1,4 @@
-import slices from './slices.jpeg';
+import slices from './slices.jpg';
 
 function makeHome() {
   const content = document.createElement('div');
@@ -28,7 +28,7 @@ function makeHome() {
   copy.appendChild(heading);
   copy.appendChild(body);
   imageWrap.appendChild(slicesPic);
-  content.appendChild(homeCopy);
+  content.appendChild(copy);
   content.appendChild(imageWrap);
 
   return content;
