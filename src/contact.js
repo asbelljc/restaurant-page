@@ -1,25 +1,26 @@
 function makeContact() {
-  content = document.createElement('div');
+  const content = document.createElement('div');
   content.id = 'contact-content';
 
-  phone = document.createElement('div');
+  const phone = document.createElement('div');
   phone.id = 'phone';
-  phone.innerText = '000-555-1234';
+  phone.innerText = '📞 000-555-1234';
 
-  form = document.createElement('form');
+  const form = document.createElement('form');
 
-  clientName = document.createElement('input');
+  const clientName = document.createElement('input');
   clientName.type = 'text';
   clientName.placeholder = 'Name'
 
-  clientEmail = document.createElement('input');
+  const clientEmail = document.createElement('input');
   clientEmail.type = 'text';
   clientEmail.placeholder = 'E-mail address';
 
-  message = document.createElement('textarea');
+  const message = document.createElement('textarea');
   message.placeholder = "Leave us a message and we'll reply promptly!";
+  message.rows = 5;
 
-  sendBtn = document.createElement('button');
+  const sendBtn = document.createElement('button');
   sendBtn.type = 'button';
   sendBtn.id = 'send-btn';
   sendBtn.innerText = 'SEND';
