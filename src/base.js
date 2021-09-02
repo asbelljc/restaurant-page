@@ -1,4 +1,4 @@
-import brand from './brand.svg';
+import brand from './Images/brand.svg';
 
 function makeHeader() {
   const header = document.createElement('header');

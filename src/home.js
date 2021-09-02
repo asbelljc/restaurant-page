@@ -1,4 +1,4 @@
-import slices from './slices.jpg';
+import slices from './Images/slices.jpg';
 
 function makeHome() {
   const content = document.createElement('div');
@@ -7,7 +7,7 @@ function makeHome() {
   const copy = document.createElement('section');
   copy.id = 'home-copy';
 
-  const heading = document.createElement('h1');
+  const heading = document.createElement('h3');
   heading.innerText = 'piece of cake';
 
   const body = document.createElement('span');
