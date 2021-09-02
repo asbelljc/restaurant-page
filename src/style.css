@@ -148,6 +148,8 @@ nav {
   padding: 0;
   background-image: linear-gradient(to bottom, rgba(45, 30, 25, 0.6), rgba(0, 0, 0, 0) 85%);
   overflow: hidden;
+  display: flex;
+  align-items: stretch;
 }
 
 #scroll-box {
@@ -167,6 +169,7 @@ nav {
       black calc(100% - 24px), 
       transparent calc(100% - 12px)
     );
+  width: 100%;
   padding: 24px;
   overflow: auto;
   position: relative;
@@ -176,6 +179,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
 }
 
 #home-copy {
