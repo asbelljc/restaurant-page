@@ -71,6 +71,10 @@ body {
   margin: 4% auto 2% auto;
 }
 
+#header img {
+  filter: drop-shadow(0 1px 6px rgb(255, 250, 245));
+}
+
 nav {
   display: flex;
   position: relative;
@@ -146,7 +150,8 @@ nav {
   flex-grow: 1;
   border-radius: 9px;
   padding: 0;
-  background-image: linear-gradient(to bottom, rgba(45, 30, 25, 0.6), rgba(0, 0, 0, 0) 85%);
+  background-image: 
+    linear-gradient(to bottom, rgba(45, 30, 25, 0.6), rgba(0, 0, 0, 0) 85%);
   overflow: hidden;
   display: flex;
   align-items: stretch;
@@ -197,6 +202,7 @@ h3 {
   margin: 0 0 6px 0;
   font-weight: 400;
   text-align: center;
+  text-shadow: 0 1px 3px rgba(45, 30, 25, 0.9);
 }
 
 span {
@@ -206,6 +212,7 @@ span {
   line-height: 32px;
   font-weight: 300;
   color: rgb(255, 250, 245);
+  text-shadow: 0 1px 3px rgba(45, 30, 25, 0.9);
 }
 
 .image-wrap {
@@ -215,20 +222,10 @@ span {
   filter: sepia(0.1);
   border-radius: 6px;
   overflow: hidden;
+  filter: drop-shadow(0 3px 12px rgba(45, 30, 25, 0.6));
 }
 
-/* add subtle vignette */
-.image-wrap::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  box-shadow: inset 0 0 50px rgba(45, 30, 25, 0.6);
-}
-
-#slices {
+img {
   width: 100%;
   display: block;
 }
@@ -251,17 +248,6 @@ span {
   flex-basis: 50%;
 }
 
-.menu-item .image-wrap {
-  object-fit: cover;
-  flex-basis: 50%;
-  height: 100%;
-}
-
-.menu-item img {
-  width: 100%;
-  display: block;
-}
-
 #contact-content {
   display: flex;
   flex-direction: column;
@@ -275,6 +261,7 @@ span {
   font-size: 24px;
   font-weight: 300;
   margin: 36px 0;
+  text-shadow: 0 1px 3px rgba(45, 30, 25, 0.9);
 }
 
 form {
