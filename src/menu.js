@@ -50,9 +50,9 @@ function loadMenu() {
   const scrollBox = document.getElementById('scroll-box');
   const menu = makeMenu();
 
-  menu.style.opacity = 0;
+  // scrollBox.style.opacity = 0;
   scrollBox.appendChild(menu);
-  menu.style.opacity = 1;
+  scrollBox.style.opacity = 1;
 }
 
 export default loadMenu;

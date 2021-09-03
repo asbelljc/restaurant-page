@@ -176,7 +176,7 @@ nav {
 }
 
 /* fades content in and out on tab change */
-#scroll-box > * {
+#scroll-box {
   transition: opacity 0.3s;
 }
 
@@ -389,7 +389,7 @@ a {
   }
 
   #menu-content {
-    gap: none;
+    gap: 0;
   }
 
   .menu-item {
