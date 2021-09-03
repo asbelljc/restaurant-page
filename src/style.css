@@ -275,6 +275,7 @@ img {
   margin-right: 20px;
   background: url(./Images/phone.svg);
   transform: translateY(-1px);
+  filter: drop-shadow(0 1px 3px rgba(45, 30, 25, 0.9));
 }
 
 form {
