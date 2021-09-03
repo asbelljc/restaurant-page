@@ -5,7 +5,7 @@ import loadMenu from './menu.js';
 import loadContact from './contact.js';
 
 const tabs = (() => {
-  const navBtns = document.getElementsByClassName('nav-btn');
+  const navBtns = () => Array.from(document.getElementsByClassName('nav-btn'));
   
   const clearContent = () => {
     const scrollBox = document.getElementById('scroll-box');
@@ -15,7 +15,7 @@ const tabs = (() => {
   };
 
   const deactivateTabs = () => {
-    navBtns.forEach(button => button.className = 'nav-btn');
+    navBtns().forEach(button => button.className = 'nav-btn');
   };
   
   const moveSlider = (e) => {
@@ -28,6 +28,7 @@ const tabs = (() => {
   };
 
   const change = (e) => {
+    console.log(e.target);
     if (e.target.classList.contains('active')) {
       return;
     } else {
@@ -50,7 +51,7 @@ const tabs = (() => {
   };
 
   const initialize = () => {
-    navBtns.forEach(button => button.addEventListener('click', change));
+    navBtns().forEach(button => button.addEventListener('click', change));
   };
 
   return { initialize };
@@ -61,3 +62,4 @@ const initializeWebsite = (() => {
   loadHome();
   tabs.initialize();
 })();
+
