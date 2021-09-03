@@ -4,7 +4,7 @@ function makeContact() {
 
   const phone = document.createElement('div');
   phone.id = 'phone';
-  phone.innerText = '📞 000-555-1234';
+  phone.innerText = '000-555-1234'; // preceded by phone symbol
 
   const form = document.createElement('form');
 

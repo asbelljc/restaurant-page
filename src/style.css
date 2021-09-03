@@ -255,6 +255,9 @@ img {
 }
 
 #phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   flex: 1 1 auto;
   color: rgb(255, 250, 245);
@@ -262,6 +265,16 @@ img {
   font-weight: 300;
   margin: 36px 0;
   text-shadow: 0 1px 3px rgba(45, 30, 25, 0.9);
+}
+
+#phone::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background: url(./Images/phone.svg);
+  transform: translateY(-1px);
 }
 
 form {
