@@ -28,6 +28,7 @@ function makeNav() {
   contactBtn.innerText = 'CONTACT';
 
   const slider = document.createElement('div');
+  slider.id = 'slider';
   slider.className = 'slider home';
 
   const sliderLeft = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

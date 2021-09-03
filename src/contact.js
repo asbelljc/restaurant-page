@@ -39,7 +39,9 @@ function loadContact() {
   const scrollBox = document.getElementById('scroll-box');
   const contactContent = makeContact();
 
+  contactContent.style.opacity = 0;
   scrollBox.appendChild(contactContent);
+  contactContent.style.opacity = 1;
 }
 
 export default loadContact;

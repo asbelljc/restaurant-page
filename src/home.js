@@ -38,7 +38,9 @@ function loadHome() {
   const scrollBox = document.getElementById('scroll-box');
   const homeContent = makeHome();
 
+  homeContent.style.opacity = 0;
   scrollBox.appendChild(homeContent);
+  homeContent.style.opacity = 1;
 }
 
 export default loadHome;

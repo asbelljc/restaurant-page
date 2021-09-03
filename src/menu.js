@@ -18,7 +18,7 @@ function makeItem(name, image) {
   const imageWrap = document.createElement('div');
   imageWrap.className = 'image-wrap';
 
-  const pic = document.createElement('div');
+  const pic = document.createElement('img');
   pic.src = image;
   pic.className = 'menu-pic';
 
@@ -50,7 +50,9 @@ function loadMenu() {
   const scrollBox = document.getElementById('scroll-box');
   const menu = makeMenu();
 
+  menu.style.opacity = 0;
   scrollBox.appendChild(menu);
+  menu.style.opacity = 1;
 }
 
 export default loadMenu;
